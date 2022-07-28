@@ -1,0 +1,27 @@
+○아두이노 -> 라즈베리파이
+*토양습도센서 
+- id (byte) : B1
+- value (byte)
+
+*조도센서 
+- id (byte) : B2
+- value (integer)
+
+*키패드 버튼 
+- id (byte) : B3
+- value (byte)
+
+
+○라즈베리파이 -> 아두이노
+*수중펌프(humidity와 needHumidity에 따라 제어) 
+- id (byte) : C1
+- second (byte)
+
+*플렉시블 led(bright와 needBright에 따라 제어) 
+- id (byte) : C2
+- 변동 (byte) : 06/07/08 (OFF/감소/증가)
+
+* LCD 제어(키패드 입력으로 제어변수 변동시) 
+- id (byte) : C3
+- option (byte) : 01/02
+- level(byte) : 00/01/02/03/04/05/06 (00의 경우 OFF)
